@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./stylesIMC.css"/>
+</head>
+<body>
+    <div id="banner"></div>
+    <div class="separador"></div>
+    <div id="pagina">
+        <div class="text">
+            <p>
+                O IMC, Índice de Massa Corporal, foi elaborado no século 19 pelo matemático Lambert Quételet.
+                Trata-se de um cálculo simples que permite verificar se alguém está ou não dentro da faixa de peso ideal.
+                Para obter-se o valor basta dividir o peso (em kg) pela altura ao quadrado (em metros).
+            </p>
+            <br>
+            <p class="formula">
+                IMC = Peso ÷ (Altura x Altura)
+            </p>
+            <br>
+            <p>
+                Veja o exemplo de como seria feito o calculo para uma pessoa de 1,73 metros de altura e 70 kg:
+            </p>
+            <br>
+            <P class="formula">
+                IMC = 70 ÷ (1,73 m x 1,73 m)
+            </P>
+            <br>
+            <p class="formula">
+                IMC = 23,4 kg/m2
+            </p>
+            <br>
+            <p>
+                Utilize a calculadora abaixo para fazer o seu cálculo:
+            </p>
+        </div>
+
+        <div class="container">
+            <h1> Calculadora de IMC</h1>
+            <div class="input">
+                <label>Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu nome"/>
+            </div>
+            <div class="input">
+                <label>Peso:</label>
+                <input type="text" id="peso" placeholder="Peso em kg"/>
+            </div>
+            <div class="input">
+                <label>Altura:</label>
+                <input type="text" id="altura" placeholder="Altura em metros"/>
+            </div>
+    
+            <div id="resultado"></div>
+
+            <button id="button">Calcular IMC</button>
+
+            <button id="tableButton">Valores de Referência</button>
+            
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>IMC (kg/m²)</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menor que 16.9</td>
+                        <td>Muito abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>17 a 18.4</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 a 24.9</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>25 a 29.9</td>
+                        <td>Acima do peso</td>
+                    </tr>
+                    <tr>
+                        <td>30 a 34.9</td>
+                        <td>Obsidade I</td>
+                    </tr>
+                    <tr>
+                        <td>35 a 40</td>
+                        <td>Obesidade II (Severa)</td>
+                    </tr>
+                    <tr>
+                        <td>Acima de 40</td>
+                        <td>Obesidade III (Mórbida)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <span> Todos os direitos reservados ©</span>
+            <span>Desenvolvido por: André Ribeiro</span>
+        </footer>
+    </div>
+
+    <script src="./scriptIMC.js"></script>
+
+</body>
+</html>
